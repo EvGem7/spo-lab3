@@ -48,7 +48,6 @@ int main() {
 	string str;
 	while (true) {
 		cout << "Enter message for client(q for quit):" << endl;
-		string str;
 		getline(cin, str);
 		sendMessage(str, pipe);
 		ReleaseSemaphore(semaphore, 1, NULL);
